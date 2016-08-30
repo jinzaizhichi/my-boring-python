@@ -56,7 +56,7 @@ What?
 
 Where is noon? You asked me.
 
-At the noon, we are stepping onto the dead road in the sun.
+At noon, the sun baked you
 
 This is summer.
 
