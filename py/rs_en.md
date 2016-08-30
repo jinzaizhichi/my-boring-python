@@ -30,7 +30,7 @@ We are the flowers of the country.
 
 However, we were flooded by the ocean of books in the beginning.
 
-I have a sister, she immigranted to the foregin. I askd her friend,
+I have a sister, she migrated to the foreign. I asked her friend,
 
 I said, "What did you do in the school?"
 
@@ -54,7 +54,7 @@ Always the dark yellow streetlight.
 
 What?
 
-Where is noon? You askd me.
+Where is noon? You asked me.
 
 At the noon, we are stepping onto the dead road in the sun.
 
