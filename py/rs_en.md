@@ -22,7 +22,7 @@ I don't like Chinese education.
 
 Chinese study, for their own, for lots of money to support their family.
 
-But foreigners study(ofcause not all) is to discover, to discover what we don't know.
+But foreigners study  (of cause not all) is to discover, to discover what we don't know.
 
 This is the difference.
 
