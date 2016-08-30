@@ -16,7 +16,7 @@ while True :
 	print (country_f-now_time)
 	print('距离17年元旦还有')
 	print (open_f-now_time)
-	time.sleep(0.5)
+	time.sleep(0.05)
 	if oss == "Linux" :
 		os.system('clear')
 	elif oss == "Windows":
