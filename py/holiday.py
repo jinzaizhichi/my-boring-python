@@ -1,3 +1,8 @@
+# TODO:
+# 1. get time from server
+# 2. use array
+
+
 import datetime,time,os,platform,sys
 
 oss = platform.system()
