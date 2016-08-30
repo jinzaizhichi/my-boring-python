@@ -1,2 +1,2 @@
-好吧，我直说了
-#这就是我的聊天室
+# @redapple0204 & @lizongzeshunshun
+**项目集中地，包括E系列和boring-python系列**
