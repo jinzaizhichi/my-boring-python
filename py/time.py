@@ -2,6 +2,8 @@ import datetime,time,os,platform
 
 oss = platform.system()
 
+jtime = input("Please enter sleep time: ")
+
 while True :
 	now_time = datetime.datetime.now()
 	summer_holiday = datetime.datetime.strptime('2016-08-31  14:00:00', '%Y-%m-%d %H:%M:%S')
@@ -16,7 +18,7 @@ while True :
 	print (country_f-now_time)
 	print('距离17年元旦还有')
 	print (open_f-now_time)
-	time.sleep(0.05)
+	time.sleep(float(jtime))
 	if oss == "Linux" :
 		os.system('clear')
 	elif oss == "Windows":
