@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit {{.Filename}}</title>
+<style type="text/css">
+    textarea{ resize:none; width:600px; height:500px}
+</style>
+</head>
+<body>
+<form action="save_file" method="post">
+<textarea id="txx" name="txx">
+{{.Content}}
+</textarea>
+<br />
+Save Name: <input type="text" value={{.Filename}} id="fn" name="fn" />
+<input type="submit" value="SUBMIT" />
+</form>
+</body>
+</html>

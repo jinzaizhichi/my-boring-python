@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>View {{.Title}} | goWiki</title>
+</head>
+<body>
+<div id="content"></div>
+<textarea id="sourcemd" style="display:none">
+{{.Content}}
+</textarea>
+<script src="markdown_to_html/markdown-to-html.min.js"></script>
+<script>
+markdownToHtml(document.getElementById('sourcemd').value,document.getElementById('content'));
+</script>
+</body>
+</html>
+
