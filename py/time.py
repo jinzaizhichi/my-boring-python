@@ -19,14 +19,9 @@ while True :
 	print('距离17年元旦还有')
 	print (open_f-now_time)
 	time.sleep(float(jtime))
-	if oss == "Linux" :
-		os.system('clear')
-	elif oss == "Windows":
+	if oss == "Windows":
 		os.system('cls')
-	elif oss == "Darwin":
-		os.system('clear')
 	else:
-		print("Error: can't read your system type")
-		exit()
+		os.system('clear')
 	
                             
