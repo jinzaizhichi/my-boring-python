@@ -8,7 +8,7 @@ Or Gaokao,
 
 What's the different between them and [Imperial Examination](https://en.wikipedia.org/wiki/Imperial_examination),
 
-It just turns [Eight-part Essay](https://en.wikipedia.org/wiki/Eight-legged_essay) into Chinese, Maths, English, History, Geography, Biology, Politic, Chemistry and physics.
+It just turns [Eight-part Essay](https://en.wikipedia.org/wiki/Eight-legged_essay) into Chinese, Maths, English, History, Geography, Biology, Politic, Chemistry and Physics.
 
 It just turns *Martial Imperial Examination* into *Physical Examination*.
 
@@ -16,11 +16,11 @@ China, Always is,
 
 "You will not get a good life if you don't study very hard."
 
-Now college students cover all of China, and the research students are also all around us.
+Now college students are covered all of China, and the research students are also all around us.
 
 I don't like Chinese education.
 
-Chinese study, for their own, for lots of money to support their family.
+Chinese study, for their own, for lots of money.
 
 But foreigners study  (of cause not all) is to discover, to discover what we don't know.
 
@@ -32,9 +32,9 @@ However, we were flooded by the ocean of books in the beginning.
 
 I have a sister, she immigranted to the foregin. I askd her friend,
 
-I said, "What did you do in the school ?"
+I said, "What did you do in the school?"
 
-"We had much more practice time than book reading time", she answered.
+"We had much more practice time than book reading time", answered she.
 
 Their study is alive,
 
@@ -65,7 +65,7 @@ This is summer.
 
 But us?
 
-Tired, tired and can't sleep even more than 7 hours !
+Tired, tired and can't sleep even more than 7 hours!
 
 Homework ? Yes, every teacher always think they don't give students lots of homework.
 
@@ -95,7 +95,7 @@ We also need do the exam every day.
 
 And take notes in the classes.
 
-Which means we take the pan over 400 times per day.
+Which means we need take the pan over 400 times per day.
 
 So please teachers don't say "Sleep early at night" anymore.
 
@@ -115,7 +115,7 @@ Even they don't know if they pass or not , GO DIE.
 
 Not pass, GO DIE.
 
-Pressure too big, GODIE.
+Pressure too big, GO DIE.
 
 ### DIE
 
@@ -135,7 +135,7 @@ Youth is in that paper.
 
 Time is in that paper.
 
-With **EVERYTHING** in the paper.
+With **EVERYTHING** in that paper.
 
 THIS IS CHINESE.
 
