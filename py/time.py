@@ -2,7 +2,14 @@ import datetime,time,os,platform
 
 oss = platform.system()
 
-jtime = input("Please enter sleep time: ")
+if len(os.Args) == 2:
+	print('Sleep time: ' + os.Args[1] + 's')
+	jtime = float(os.Args[1])
+else:
+	print('Sleep time: ' + 0.05 + 's')
+	print('You can use time.py <sleep_time> to set sleep time.')
+	jtime = 0.05
+	time.sleep(2)
 
 while True :
 	now_time = datetime.datetime.now()
@@ -18,7 +25,7 @@ while True :
 	print (country_f-now_time)
 	print('距离17年元旦还有')
 	print (open_f-now_time)
-	time.sleep(float(jtime))
+	time.sleep(jtime)
 	if oss == "Windows":
 		os.system('cls')
 	else:
