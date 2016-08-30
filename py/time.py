@@ -1,10 +1,10 @@
-import datetime,time,os,platform
+import datetime,time,os,platform,sys
 
 oss = platform.system()
 
-if len(os.Args) == 2:
-	print('Sleep time: ' + os.Args[1] + 's')
-	jtime = float(os.Args[1])
+if len(sys.argv) == 2:
+	print('Sleep time: ' + sys.argv[1] + 's')
+	jtime = float(sys.argv[1])
 else:
 	print('Sleep time: ' + 0.05 + 's')
 	print('You can use time.py <sleep_time> to set sleep time.')
