@@ -1,6 +1,6 @@
 import datetime,time,os,platform
 
-os = platform.system()
+oss = platform.system()
 
 while True :
 	now_time = datetime.datetime.now()
@@ -17,10 +17,12 @@ while True :
 	print('距离17年元旦还有')
 	print (open_f-now_time)
 	time.sleep(0.5)
-	if os == "Linux" :
+	if oss == "Linux" :
 		os.system('clear')
-	elif os == "Windows":
+	elif oss == "Windows":
 		os.system('cls')
+	elif oss == "Darwin":
+		os.system('clear')
 	else:
 		print("Error: can't read your system type")
 		exit()
