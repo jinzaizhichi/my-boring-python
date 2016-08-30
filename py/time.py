@@ -6,7 +6,7 @@ if len(sys.argv) == 2:
 	print('Sleep time: ' + sys.argv[1] + 's')
 	jtime = float(sys.argv[1])
 else:
-	print('Sleep time: ' + 0.05 + 's')
+	print('Sleep time: ' + str(0.05) + 's')
 	print('You can use time.py <sleep_time> to set sleep time.')
 	jtime = 0.05
 	time.sleep(2)
