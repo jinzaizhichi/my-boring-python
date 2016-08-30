@@ -14,7 +14,7 @@ Now Version: **goWiki 0.1.1**
 
 **You can view the *main.go* and change the port and rebuild.**
 
-1. Use `http://127.0.0.1:<your_port(default: 8033)>/edit?filenm=<filename>` to create a new file or edit a file already in `templates/datafile`.
+1. Use `http://127.0.0.1:<your_port(default: 9590)>/edit?filenm=<filename>` to create a new file or edit a file already in `templates/datafile`.
 2. You also can put your markdown file into `templates/datafile`.
 3. Use `http://127.0.0.1/arview?filenm=<filename>` to view a file.
 
