@@ -16,7 +16,7 @@
 
 下载地址：推荐http://mirrors.ustc.edu.cn/archlinux/iso/ ，选择现在的月份下载，然后选择archlinux-你选择的年月.iso 下载（例如现在是archlinux-2016.07.01-dual.iso）。
 
-你也可以到官网https://www.archlinux.org/下载，但是下载的速度特别的慢，请酌情使用。
+你也可以到官网https://www.archlinux.org/ 下载，但是下载的速度特别的慢，请酌情使用。
 
 > 建议：下载完成后验证MD5
 
