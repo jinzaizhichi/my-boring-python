@@ -146,6 +146,12 @@ THIS IS CHINESE.
 
 # FREEDOM!
 
+> Men are born, and always continue, free and equal in respect of their rights. Civil distinctions, therefore, can be founded only on public utility.
+
+> Political liberty consists in the power of doing whatever does not injure another.
+
+> FROM ***Declaration of the Rights of Man and of Citizens by The National Assembly of France***
+
 ***THIS IS WHAT WE LOVE***
 
 From two students on github, @redapple0204 & @lizongzeshunshun
