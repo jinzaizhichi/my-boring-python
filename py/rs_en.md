@@ -111,17 +111,17 @@ And it's the devil which can damage children's heart!
 
 It's also the EVIL MAN make students DIE!!
 
-Even they don't know if they pass or not , GO DIE.
+Even they don't know if they pass or not , commit suicide.
 
-Not pass, GO DIE.
+Not pass, commit suicide.
 
-Pressure too big, GO DIE.
+Pressure too big, commit suicide.
 
-### DIE
+### commit suicide.
 
-## DIE
+## commit suicide.
 
-# DIE
+# commit suicide.
 
 # Why
 
