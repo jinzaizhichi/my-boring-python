@@ -1,114 +1,125 @@
-  ARCH	安装向导
-前言：本向导适用于初学者或者有一点点基础的linux用户，大神请忽略....如果有任何问题或者建议请在“焕然一新41吧”发帖询问。或者去别的地方提问，特别注意有些无聊人士会诱导你sudo rm -rf /  务必小心！
+
+# 前言
+本向导适用于初学者或者有一点点基础的linux用户。如果有任何问题或者建议请在“焕然一新41吧”发帖询问。或者去别的地方提问。
+
 由于我还没有安装过程的图片，所以本教程可能很少图或者没有图
+
 由于我不是很熟悉uefi，所以本教程对于uefi的用户可能有点危险。
-内容有点多，如果你之事想找某个内容请按ctrl+f搜索。
+
+内容有点多，如果你之事想找某个内容请按Ctrl+F搜索。
+
 当然你也可以顺便参考别人写的arch安装向导来修补本向导的不完整。
-                      准备环节
 
-1.1 下载arch安装镜像
-       下载地址：推荐http://mirrors.ustc.edu.cn/archlinux/iso/ （中科大），选择现在的月份下载（例如现在是2016.7月，就点2016.7）然后选择archlinux-你选择的年月.iso 下载（例如现在是archlinux-2016.07.01-dual.iso ）
-    		你也可以到官网https://www.archlinux.org/下载，但是下载的速度特别的慢，请酌情使用
-          建议：下载完成后验证MD5
-      1.2刻录u盘
-	windows：使用“win32diskimage”或者”winsetupfromdisk”刻录
-ps：请勿使用软碟通！！！！！！
-	linux：使用dd刻录.
+# 1. 准备
 
-        到此准备工作正式完成！
+## 1.1 下载Arch Linux安装镜像
+
+下载地址：推荐http://mirrors.ustc.edu.cn/archlinux/iso/ ，选择现在的月份下载，然后选择archlinux-你选择的年月.iso 下载（例如现在是archlinux-2016.07.01-dual.iso）。
+
+你也可以到官网https://www.archlinux.org/下载，但是下载的速度特别的慢，请酌情使用。
+
+> 建议：下载完成后验证MD5
+
+## 1.2 刻录u盘
+
+**Windows** :使用“win32diskimage”或者”winsetupfromdisk”刻录。
+
+> 警告：请勿使用软碟通
+
+**Linux** :使用dd刻录.
 
 
+# 2. 安装Arch Linux
 
-                安装ARCH
 在阅读这一章节的时候，请确保你已经完成了上面的所有步骤，并且确保你有足够的耐心,否则请安装arch的衍生版（manjaro之类的），或者使用本文章最后的一件配置脚本。
-祝你成功！
-2.1 选择x86_64 或者i686
-     建议选择x86_64 ，因为i686可能会停止支持，而且有些软件已经不兼容了，选择完毕后按回车，进入live
-2.2 检测网络畅通&链接wifi
 
-很简单，你只需要ping baidu.com即可
-如果你是wifi，输入wifi-menu就可以了
-2.3 改源
+## 2.1 选择x86_64 或者i686
+
+建议选择x86_64 ，因为i686可能会停止支持，而且有些软件已经不兼容了，选择完毕后按回车，进入live
+
+## 2.2 检测网络畅通&链接wifi
+
+Ping百度（执行ping baidu.com），如果有数据包返回说明网络联通。
+
+如果你是wifi，输入wifi-menu就可以了。
+
+## 2.3 改源
+
 由于arch默认的是外国的源，速度很慢，所以需要改源
-命令nano /etc/pacman.d/mirrorlist 或者 vim /etc/pacman.d/mirrorlist把#后面是china的源弄到最上面，也可以直接删除不是china的源
-2.3 分区
-实体机：输入cfdisk，选择你要安装arch的分区，选中Delete，回车，再按回车，然后选择New，按一下回车，选择write，输入yes，选择quit，回车（你也可以选择分一个swap区）
-            然后 mkfs.ext4 /dev/你刚刚分的区
-例如你要安装在第一个分区就mkfs.ext4 /dev/sda1 
+命令nano /etc/pacman.d/mirrorlist 或者 vim /etc/pacman.d/mirrorlist把#后面是china的源弄到最上面，也可以直接删除不是china的源。
 
+## 2.3 分区
+
+> 警告：该步骤可能导致你的硬盘数据丢失，请务必知道自己在做什么。
+
+实体机：输入cfdisk，选择你要安装arch的分区，选中Delete，回车，再按回车，然后选择New，按一下回车，选择write，输入yes，选择quit，回车（你也可以选择分一个swap区）。
+
+然后 mkfs.ext4 /dev/你刚刚分的区。
+
+例如你要安装在第一个分区就mkfs.ext4 /dev/sda1。
 
 
 虚拟机分区：虚拟机和实体机不一样，必须要一个swap，否则无法引导。
 
-分区方案1:cfdisk分出这样子来
-   /dev/sda1    1GB~4GB
+分区方案:cfdisk
 
-   /dev/sda2    30%-Disk-Space
+* /dev/sda1 1GB~4GB
+* /dev/sda2 30%硬盘空间
+* /dev/sda3 45%~50%硬盘空间
+* /dev/sda4 2*内存
 
-   /dev/sda3    45%~50%-Disk-Space
-
-   /dev/sda4    2*RAM-SPACE
 然后执行
-mkfs.ext4 /dev/sda2
 
-mkfs.ext4 /dev/sda3
+1. mkfs.ext4 /dev/sda2
+2. mkfs.ext4 /dev/sda3
+3. mkswap /dev/sda4
+4. swapon /dev/sda4
+5.mkfs.ext4 /dev/sda1
 
-mkswap /dev/sda4
-
-swapon /dev/sda4
-
-mkfs.ext4 /dev/sda1
-即可，当然你也可以这样分区（更简单）
-        
-输入fdisk /dev/sda，然后会让你输入命令，不用怕，其实fdisk很简单的。
-
-1.输入n新建分区，其他地方按回车
-2.到了红框框的地方，输入+512M
-3.到了command（最后那里）输入n
-        
-
-
-然后一路回车，到了又一个command，输入w，搞定
-然后输入
-mkfs.ext4 /dev/sda2
-mkswapon /dev/sda1
-就好了
 注意：请具体参考http://tieba.baidu.com/p/2307324919来在虚拟机分区
 
+## 2.4 挂载分区
 
-2.4 挂载分区
 如果你是按照第一个方法分区的话，输入
-mount /dev/你的分区 /mnt
+
+mount /dev/你的磁盘 /mnt
+
 例如mount /dev/sda1 /mnt
-如果你用的是第二种方法分区，请输入
-mount /dev/sda2 /mnt
 
-mkdir /mnt/{boot,home}
+如果你使用的第二种方法分区(虚拟机），请输入
 
-mount /dev/sda1 /mnt/boot
-
-mount /dev/sda3 /mnt/home
-          如果你使用的第三种方法分区，请输入
 mount /dev/sda2
 
-2.5 更新系统源
-输入 pacman -Syy ,然后输入y
+## 2.5 更新系统源
+
+输入 pacman -Syy ,然后输入y。
+
 等待一下，完成。
-2.6 安装基本系统
+## 2.6 安装基本系统
+
 输入pacstrap -i /mnt base base-devel net-tools
+
 按两下回车，输入y，等待十分钟左右。
-2.7 我也不知道干什么要做这一步
+
+## 2.7 我也不知道干什么要做这一步
+
 genfstab -p /mnt >> /mnt/etc/fstab
-2.8 chroot进入新的系统
+
+## 2.8 chroot进入新的系统
 
 arch-chroot /mnt
-*可选：安装wifi
+
+> 提示：可选：安装wifi
+
 先重复上面的改源，然后
+
 pacman -Syy
+
 pacman -S netctl
-2.9 设置语言，地区什么的
-cd /etc 
-nano locale.gen
+
+## 2.9 设置语言，地区什么的
+cd /etc
+nano locale.gen
 将#en_US.UTF8,zh_CN.GBK,zh_CN.GB2312,zh_CN.GB18030,zh_CN.UTF-8前的#去掉  
 然后输入locale-gen  
 再输入echo LANG=zh_CN.UTF-8 >> locale.conf  
