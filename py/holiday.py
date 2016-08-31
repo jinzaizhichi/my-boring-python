@@ -20,7 +20,7 @@ while True :
 	now_time = datetime.datetime.now()
 	summer_holiday = datetime.datetime(2016,8,31,14,30)
 	mid_f = datetime.datetime(2016,9,15)
-	country_f = datetime.datetime.strptime(2016,10,1)
+	country_f = datetime.datetime(2016,10,1)
 	open_f = datetime.datetime(2017,1,1)
 	print('距离暑假结束只剩下')
 	print ((summer_holiday-now_time).days)
