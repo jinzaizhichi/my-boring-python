@@ -1,7 +1,6 @@
 import time,random
 
 print('正在 从zph中获取数据')
-
 print('正在预测语文成绩')
 
 
