@@ -122,11 +122,12 @@ pacman -S netctl
 cd /etc
 nano locale.gen
 将
->#en_US.UTF8
+>en_US.UTF8
 zh_CN.GBK
 zh_CN.GB2312
 zh_CN.GB18030
 zh_CN.UTF-8
+
 前的#去掉  
 然后输入locale-gen  
 再输入
@@ -136,9 +137,11 @@ zh_CN.UTF-8
 把下面的内容写进去
 >KEYMAP=us
 FONT=
+
 保存退出
 然后输入
 >ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
 2.10 创建主机名字
 输入nano /etc/hostname
 然后在里面输入你要的主机名字，保存退出（ctrl+x)
