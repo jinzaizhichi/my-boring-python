@@ -136,7 +136,8 @@ zh_CN.UTF-8
 然后输入nano /etc/vconsole.conf
 把下面的内容写进去
 >KEYMAP=us
-FONT=
+
+>FONT=
 
 保存退出
 然后输入
