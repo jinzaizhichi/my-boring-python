@@ -7,7 +7,7 @@
 
 ~~**ETransV2**: 用golang写的文件传输（未完成）:[ETransV2](https://github.com/redapple0204/my-boring-python/tree/master/ETransV2)~~
 
-**vim-config**: @K-Guan提供的vim配置文件（未上传完成）:[vim-config](https://github.com/redapple0204/my-boring-python/tree/master/vim-config)
+**vim-config**: @K-Guan提供的vim配置文）:[vim-config](https://github.com/redapple0204/my-boring-python/tree/master/vim-config)
 
 **goWiki**: Golang写的markdown解析web服务: [goWiki(LZZ)](https://github.com/lizongzeshunshun/goWiki)
 
