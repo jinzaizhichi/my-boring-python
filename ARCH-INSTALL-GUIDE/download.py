@@ -18,7 +18,7 @@ if userVersion == "1":
     with open("arch-install-guide-beta.doc", 'wb') as f:
         f.write(data)
     print('下载完毕！请查看本目录生成的arch-install-guide-beta.doc')
-if shuru == "2":
+if userVersion == "2":
     print('正在下载中....')
     fpath = os.getcwd() # can be same
     os.chdir(fpath)
