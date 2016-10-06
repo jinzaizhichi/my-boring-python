@@ -25,7 +25,7 @@ if userVersion == "2":
     data = urllib.request.urlopen(stable_link.text).read()
     with open("arch-install-guide.doc", 'wb') as f:
         f.write(data)
-    print('下载完毕！请查看本目录生成的arch-install-guide.doc')
+    print('下载完毕！请查看本目录生成的arch-install-guide-stable.doc')
 
 else:
      print("Error: Please enter 1 or 2")
