@@ -27,4 +27,7 @@ if userVersion == "2":
         f.write(data)
     print('下载完毕！请查看本目录生成的arch-install-guide.doc')
 
+else:
+     print("Error: Please enter 1 or 2")
+     exit()
 
