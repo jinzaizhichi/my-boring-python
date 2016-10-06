@@ -7,7 +7,7 @@ print('目前最新的稳定版本是',resp1.text)
 print('请输入您要下载的版本（1为测试版，2为稳定版）')
 print('将下载到本程序所在的目录')
 shuru = input()
-shuru
+
 if shuru=="1": 
 	 lujing = os.getcwd()
 	 os.chdir(lujing)
