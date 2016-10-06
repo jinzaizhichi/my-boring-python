@@ -14,8 +14,10 @@
 使用方法先安装python3(linux自带）
 windows：
 >pip install data
-python download.py
+
+>python download.py
 
 linux&mac:
 >sudo pip3 installdata
-python3 download.py
+
+>python3 download.py
