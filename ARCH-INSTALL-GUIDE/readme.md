@@ -12,6 +12,7 @@
 
 其中有个download.py可以帮助您快速获取最新版本
 使用方法先安装python3（linux自带）
+
 windows：
 >pip install data
 
