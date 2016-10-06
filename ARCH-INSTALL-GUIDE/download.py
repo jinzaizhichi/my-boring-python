@@ -1,4 +1,4 @@
-import os, re, sys, requests, data, urllib.requests
+import os,urllib.request,re,sys,requests,data
 
 print ('欢迎使用arch安装向导获取器')
 beta_github = requests.get("https://raw.githubusercontent.com/redapple0204/my-boring-python/master/tmp/version-beta")
