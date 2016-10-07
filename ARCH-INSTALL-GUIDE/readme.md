@@ -8,17 +8,13 @@
 
 最新稳定版[ARCH-INSTALL-GUIDE 2.0](https://github.com/redapple0204/my-boring-python/raw/master/ARCH-INSTALL-GUIDE/ARCH%20INSTALL%20GUIDE%202.0(optimized%20by%20hanxibuya).doc)
 
-最新测试版[code name "happymax" build  004](https://github.com/redapple0204/my-boring-python/raw/master/ARCH-INSTALL-GUIDE/ARCH%20INSTALL%20GUIDE%20code%20name%20%22happymax%22%20build%20004.doc)
+最新测试版[code name happymax build  005](https://raw.githubusercontent.com/redapple0204/my-boring-python/master/ARCH-INSTALL-GUIDE/ARCH%20INSTALL%20GUIDE%20code%20name%20happymax%20build%20005.doc)
 
 其中有个download.py可以帮助您快速获取最新版本
 使用方法先安装python3（linux自带）
 
-windows：
->pip install data
+windows:
+python download.py
 
->python download.py
-
-linux&mac:
->sudo pip3 installdata
-
->python3 download.py
+mac&linux
+python3 download.py
