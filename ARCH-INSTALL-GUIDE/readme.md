@@ -11,7 +11,8 @@
 最新测试版[code name happymax build  005](https://raw.githubusercontent.com/redapple0204/my-boring-python/master/ARCH-INSTALL-GUIDE/ARCH%20INSTALL%20GUIDE%20code%20name%20happymax%20build%20005.doc)
 
 其中有个download.py可以帮助您快速获取最新版本
-使用方法先安装python3（linux自带）
+
+使用方法:先安装python3（linux自带）
 
 windows:
 python download.py
