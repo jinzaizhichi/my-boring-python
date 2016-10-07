@@ -15,7 +15,9 @@
 使用方法:先安装python3（linux自带）
 
 windows:
-python download.py
+
+>python download.py
 
 mac&linux
-python3 download.py
+
+>python3 download.py
