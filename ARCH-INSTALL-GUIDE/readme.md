@@ -12,12 +12,10 @@
 
 其中有个download.py可以帮助您快速获取最新版本
 
-使用方法:先安装python3（linux自带）
+**By redapple0204**
 
-windows:
+You can build main.go by yourself and use with `./archgo stable` or `./archgo beta`, which can help you to download the guide.
 
->python download.py
+I will upload binary version later.
 
-mac&linux
-
->python3 download.py
+**By lizongzeshunshun(NeterOster)**
