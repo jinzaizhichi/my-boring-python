@@ -1,4 +1,4 @@
-**WARNING: THIS VERSION IS OUT OF UPDATE. PLEASE CHECK [NEW-VERSION](https://github.com/redapple0204/my-boring-python/blob/master/ARCH-INSTALL-GUIDE**
+**WARNING: THIS VERSION IS OUT OF UPDATE. PLEASE CHECK [NEW-VERSION](https://github.com/redapple0204/my-boring-python/blob/master/ARCH-INSTALL-GUIDE)**
 
 
 # 前言
