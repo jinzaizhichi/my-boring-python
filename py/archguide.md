@@ -1,5 +1,4 @@
-**WARNING: THIS VERSION IS OUT OF UPDATE. PLEASE CHECK [NEW-VERSION](https://github.com/redapple0204/my-boring-python/blob/master/ARCH-INSTALL-GUIDE)**
-
+**本版本目前有@lizongzeshunshun维护**
 
 # 前言
 
@@ -49,17 +48,17 @@ Ping百度（执行ping baidu.com），如果有数据包返回说明网络联�
 ## 2.3 改源
 
 由于arch默认的是外国的源，速度很慢，所以需要改源
-命令nano /etc/pacman.d/mirrorlist 或者 vim /etc/pacman.d/mirrorlist把#后面是china的源弄到最上面，也可以直接删除不是china的源。
+命令`nano /etc/pacman.d/mirrorlist` 或者 `vim /etc/pacman.d/mirrorlist` 把#后面是china的源弄到最上面，也可以直接删除不是china的源。
 
 ## 2.3 分区
 
-> 警告：该步骤可能导致你的硬盘数据丢失，请务必知道自己在做什么。
+> **警告：该步骤可能导致你的硬盘数据丢失，请务必知道自己在做什么。**
 
-实体机：输入cfdisk，选择你要安装arch的分区，选中Delete，回车，再按回车，然后选择New，按一下回车，选择write，输入yes，选择quit，回车（你也可以选择分一个swap区）。
+实体机：输入`cfdisk`，选择你要安装arch的分区，选中Delete，回车，再按回车，然后选择New，按一下回车，选择write，输入yes，选择quit，回车（你也可以选择分一个swap区）。
 
-然后 mkfs.ext4 /dev/你刚刚分的区。
+然后 `mkfs.ext4 /dev/`你刚刚分的区。
 
-例如你要安装在第一个分区就mkfs.ext4 /dev/sda1。
+例如你要安装在第一个分区就`mkfs.ext4 /dev/sda1`。
 
 
 虚拟机分区：虚拟机和实体机不一样，必须要一个swap，否则无法引导。
@@ -77,7 +76,7 @@ Ping百度（执行ping baidu.com），如果有数据包返回说明网络联�
 2. mkfs.ext4 /dev/sda3
 3. mkswap /dev/sda4
 4. swapon /dev/sda4
-5.mkfs.ext4 /dev/sda1
+5. mkfs.ext4 /dev/sda1
 
 注意：请具体参考http://tieba.baidu.com/p/2307324919 来在虚拟机分区
 
@@ -85,124 +84,130 @@ Ping百度（执行ping baidu.com），如果有数据包返回说明网络联�
 
 如果你是按照第一个方法分区的话，输入
 
-mount /dev/你的磁盘 /mnt
+`mount /dev/你的磁盘 /mnt`
 
-例如mount /dev/sda1 /mnt
+例如`mount /dev/sda1 /mnt`
 
 如果你使用的第二种方法分区(虚拟机），请输入
 
-mount /dev/sda2
+`mount /dev/sda2`
 
 ## 2.5 更新系统源
 
-输入 pacman -Syy ,然后输入y。
+输入 `pacman -Syy` ,然后输入y。
 
 等待一下，完成。
 ## 2.6 安装基本系统
 
-输入pacstrap -i /mnt base base-devel net-tools
+输入`pacstrap -i /mnt base base-devel net-tools`
 
 按两下回车，输入y，等待十分钟左右。
 
 ## 2.7 我也不知道干什么要做这一步
 
-genfstab -p /mnt >> /mnt/etc/fstab
+`genfstab -p /mnt >> /mnt/etc/fstab`
 
 ## 2.8 chroot进入新的系统
 
-arch-chroot /mnt
+`arch-chroot /mnt`
 
 > 提示：可选：安装wifi
 
 先重复上面的改源，然后
 
-pacman -Syy
+`pacman -Syy`
 
-pacman -S netctl
+`pacman -S netctl`
 
 ## 2.9 设置语言，地区什么的
-cd /etc
-nano locale.gen
+
+`cd /etc`
+`nano locale.gen`
 将
->en_US.UTF8
+```
+en_US.UTF8
 zh_CN.GBK
 zh_CN.GB2312
 zh_CN.GB18030
 zh_CN.UTF-8
+```
 
 前的#去掉  
-然后输入locale-gen  
+然后输入`locale-gen  `
 再输入
->echo LANG=zh_CN.UTF-8 >> locale.conf  
+`echo LANG=zh_CN.UTF-8 >> locale.conf`
 
-然后输入nano /etc/vconsole.conf
+然后输入`nano /etc/vconsole.conf`
 把下面的内容写进去
->KEYMAP=us
+```
+KEYMAP=us
 
->FONT=
-
+FONT=
+```
 保存退出
 然后输入
->ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+`ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime`
 
-2.10 创建主机名字
-输入nano /etc/hostname
+## 2.10 创建主机名字
+输入`nano /etc/hostname`
 然后在里面输入你要的主机名字，保存退出（ctrl+x)
 
 
-2.11 设置root密码，创建新用户
-输入passwd设置root密码
-输入useradd -m -g users -G wheel -s /bin/bash 你要的用户名 创建新用户
-passwd 你的用户名
+## 2.11 设置root密码，创建新用户
+输入`passwd`设置root密码
+输入`useradd -m -g users -G wheel -s /bin/bash 你要的用户名 `创建新用户
+`passwd 你的用户名`
 创建密码即可
 
-2.22 安装grub（可能不适用uefi，如果不适用请自行百度）
-pacman -S grub-bios 
+## 2.12 安装grub（可能不适用uefi，如果不适用请自行百度）
+`pacman -S grub-bios `
 
-grub-install /dev/sda 
+`grub-install /dev/sda`
 
-grub-mkconfig -o /boot/grub/grub.cfg
-你也可以参考这个https://wiki.archlinux.org/index.php/GRUB
-        EFI和苹果电脑请参考这个
-https://wiki.archlinux.org/index.php/GRUB/EFI_examples
-2.23取消挂载分区，重启
-exit
+`grub-mkconfig -o /boot/grub/grub.cfg`
 
-umount /mnt/{boot,home}
+## 2.13取消挂载分区，重启
+`exit`
 
-umount /mnt
+`umount /mnt/{boot,home}`
 
-Reboot
+`umount /mnt`
 
-
-
-
-
-
+`reboot`
 
 
 到这里，基本系统安装完毕，接下来就是装桌面环境了
 
-                     安装桌面环境
+# 3 安装桌面环境
+
 当你重启进入系统的时候，恭喜你，你的基本系统安装完了，但是你还没有桌面可以用，所以现在我们就要来安装桌面环境.
 
-3.1 接通网络
-输入：ip link set 你的网卡名字 up
+## 3.1 接通网络
+输入：`ip link set 你的网卡名字 up`
 
-dhcpcd
-当然有的电脑可以直接dhcpcd
-链接wifi：wifi-menu
-然后ping baidu.com检测网络
-3.2 改源&更新系统源列表
+`dhcpcd`
+
+当然有的电脑可以直接`dhcpcd`
+
+链接wifi：`wifi-menu`
+
+然后`ping baidu.com`检测网络
+
+## 3.2 改源&更新系统源列表
+
 遵循上面的改源方法（如果已经是中国的就不用管了），然后pacman -Syy
 
-*安装显卡驱动
-pacman -S xf86-video-vesa
-pacman -S xf86-video-nouveau
-3.3 把用户添加进sudo用户组
-输入visudo
-在“root  ALL=(ALL)   ALL”这一行下面，再加入一行：
-                 xulei  ALL=(ALL)     ALL
+## 3.3 [可选] 安装显卡驱动
+`pacman -S xf86-video-vesa`
+`pacman -S xf86-video-nouveau`
+
+## 3.3 把用户添加进sudo用户组
+
+`su`
+`nano /etc/sudoers`
+
+输入
+`用户名 ALL=(ALL) ALL`
 
 3.4 安装桌面环境（列出了2种，请自己选择，如果要状别的，请自行搜索）[记得以root运行！]
 1.gnome
@@ -246,17 +251,6 @@ echo exec cinnamon-session > ~/.xinitrc
 33.安装roxterm：pacman -S roxterm
 34.安装网络管理：pacman -S networkmanager
 35.开机启动网络管理：systemctl enable NetworkManager.service
-
-
-
-
-
-
-
-
-
-
-
 
 
 
