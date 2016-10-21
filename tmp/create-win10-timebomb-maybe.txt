@@ -103,7 +103,8 @@ http://tieba.baidu.com/p/4757013072
 store里面有啥？
 
 2016-09-15 21:46:39 饕龖龍丮
-解压Dism /mount-wim /wimfile:文件盘:\sources\install0.wim /index:1 /mountdir:保存盘:\XXXDism /Unmount-Image /MountDir:保存盘:\XXX /Commit
+解压Dism /mount-wim /wimfile:文件盘:\sources\install0.wim /index:1 /mountdir:保存盘:\XXX
+Dism /Unmount-Image /MountDir:保存盘:\XXX /Commit
 
 2016-09-15 21:46:45 饕龖龍丮
 一些dat
