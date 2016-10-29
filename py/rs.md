@@ -206,7 +206,11 @@
 
 这就是中国社会
 
+###附
+
 [看看这些可怜的学生](https://www.zhihu.com/question/48357742)
+
+[中国教育的失败](https://www.zhihu.com/question/31950428)
 
 # 自由
 # FREEDOM
