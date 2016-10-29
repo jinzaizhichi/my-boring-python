@@ -206,6 +206,7 @@
 
 这就是中国社会
 
+[看看这些可怜的学生](https://www.zhihu.com/question/48357742)
 
 # 自由
 # FREEDOM
