@@ -6,9 +6,9 @@
 
 如果您要下载稳定的版本，请看后面标注有版本号的（例如1.0,2.0)而不是buildxxx，rcxxx，RTM等
 
-最新稳定版[ARCH-INSTALL-GUIDE 2.0](https://github.com/redapple0204/my-boring-python/raw/master/ARCH-INSTALL-GUIDE/ARCH%20INSTALL%20GUIDE%202.0(optimized%20by%20hanxibuya).doc)
+最新稳定版[ARCH-INSTALL-GUIDE 3.0](https://github.com/redapple0204/my-boring-python/blob/master/ARCH-INSTALL-GUIDE/ARCH-INSTALL-GUIDE3.0.doc?raw=true)
 
-最新测试版[code name happymax build  005](https://raw.githubusercontent.com/redapple0204/my-boring-python/master/ARCH-INSTALL-GUIDE/ARCH%20INSTALL%20GUIDE%20code%20name%20happymax%20build%20005.doc)
+最新测试版：NONE
 
 其中有个download.py可以帮助您快速获取最新版本
 
