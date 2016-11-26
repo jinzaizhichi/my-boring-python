@@ -3,6 +3,7 @@
 #等待一会，没有意外的话就能在菜单找到qq了。
 #注：这个qq用起来不错，几乎没有bug
 #qq版本为qq8.1.
+#ps：我刚学pkgbuild，写的可能不太规范，但是能用。如果有更好的建议，欢迎开issue或者pull requests来反馈
 
 pkgname=qingfengwineqq
 pkgver=8.1
