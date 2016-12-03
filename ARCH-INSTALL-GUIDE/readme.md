@@ -8,7 +8,7 @@
 
 最新稳定版[ARCH-INSTALL-GUIDE 3.0](https://github.com/redapple0204/my-boring-python/blob/master/ARCH-INSTALL-GUIDE/ARCH-INSTALL-GUIDE3.0.doc?raw=true)
 
-最新测试版：NONE
+最新测试版：[ARCH-INSTALL-GUIDE-codename-vistawithsp2-build008](https://github.com/redapple0204/my-boring-python/blob/master/ARCH-INSTALL-GUIDE/ARCH-INSTALL-GUIDE-code-name-vistawithsp2-build-008.doc?raw=true)
 
 其中有个download.py可以帮助您快速获取最新版本
 
